@@ -1,5 +1,14 @@
 import Image from "next/image";
+import HeroSection from "@/components/hero/HeroSection";
+import EducatorProfile from "@/components/educatorProfile/EducatorProfile";
+import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 
 export default function Home() {
-  return <h1> Daddy6ix Academy Ltd</h1>;
+  return (
+    <>
+      <HeroSection />
+      <EducatorProfile />
+      <TestimonialsSection />
+    </>
+  );
 }

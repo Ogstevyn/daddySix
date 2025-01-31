@@ -17,12 +17,13 @@
 
 .logo {
   height: auto;
+  padding-right: 50px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 100px;
 }
 
 .nav-links li {
