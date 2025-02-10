@@ -5,12 +5,15 @@
 }
 
 .educator-container {
-  max-width: 1700px;
+  min-width: 50px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+.educator-bg {
+  text-align: center;
 }
 
 .educator-image {
