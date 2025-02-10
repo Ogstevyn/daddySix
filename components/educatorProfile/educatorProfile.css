@@ -1,0 +1,110 @@
+/* app/components/educatorProfile/EducatorProfile.css */
+.educator-profile {
+  padding: 6rem 2rem;
+  background-image: linear-gradient(#01080a, #031a0d, #020b07);
+}
+
+.educator-container {
+  min-width: 50px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.educator-bg {
+  text-align: center;
+}
+
+.educator-image {
+  position: relative;
+  aspect-ratio: 3/4;
+  width: 100%;
+  display: flex; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+  overflow: hidden; /* Keep this */
+}
+
+.image-container {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  max-width: 600px; /* Prevent image from stretching too wide */
+}
+
+.profile-img {
+  object-fit: cover;
+  object-position: center; /* Ensure image is centered within frame */
+  width: 100%;
+  height: 100%;
+}
+
+.educator-content {
+  padding-left: 2rem;
+}
+
+.section-subtitle {
+  color: #0deb96;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.educator-name {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.educator-tagline {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.educator-bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.highlight-name {
+  color: #0070f3;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .educator-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .educator-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .educator-name {
+    font-size: 2.2rem;
+  }
+
+  .educator-bio {
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .educator-profile {
+    padding: 4rem 1rem;
+  }
+
+  .educator-name {
+    font-size: 1.8rem;
+  }
+}
